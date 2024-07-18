@@ -1,0 +1,302 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+	--btn-color: #3173ff;
+	--bg-color: #dedede;
+	--font-color: #141f57;
+	--bg1-color: #ffffff;
+}
+
+body {
+	display: flex;
+	padding: 10px;
+	min-height: 100vh;
+	justify-content: center;
+	background: var(--bg-color);
+}
+.container {
+	width: 850px;
+	background: #f1f1f1;
+
+	border-radius: 10px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.container1 {
+	padding: 30px 35px 35px;
+}
+
+.container h1 {
+	font-size: 25px;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 20px;
+	color: var(--font-color);
+	text-transform: uppercase;
+}
+
+/* NAv bar */
+.nav {
+	margin: 0;
+	height: 20px;
+	padding: 10px;
+	background-color: #ffffff;
+}
+.img {
+	display: flex;
+	justify-content: center;
+}
+.img p {
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 10px;
+	color: var(--font-color);
+}
+
+img {
+	height: 20px;
+	width: 30px;
+}
+
+/* input */
+
+.masukan {
+	align-content: center;
+}
+
+input {
+	border: var(--btn-color) solid 2px;
+	height: 42px;
+	width: 200px;
+	font-size: 20px;
+	margin-top: 10px;
+	border-radius: 10px;
+	color: var(--btn-color);
+}
+label {
+	margin-top: 10px;
+	color: var(--font-color);
+	display: block;
+	font-size: 20px;
+	text-decoration: none;
+}
+/* remove arrows input number */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.min {
+	background-color: var(--bg-color);
+	color: var(--font-color);
+	width: 45px;
+	height: 42px;
+	font-size: 30px;
+	margin-left: 10px;
+	border-radius: 10px;
+	border: var(--btn-color) solid 2px;
+}
+
+.min:hover {
+	background-color: var(--btn-color);
+	color: var(--bg1-color);
+}
+
+.plus {
+	background-color: var(--btn-color);
+	color: var(--bg1-color);
+	width: 45px;
+	height: 42px;
+	font-size: 30px;
+	margin-left: 10px;
+	border-radius: 10px;
+	border: var(--btn-color) solid 2px;
+}
+
+.plus:hover {
+	background-color: var(--bg1-color);
+	color: var(--btn-color);
+}
+
+#total1 label {
+	margin-top: 30px;
+	font-weight: bold;
+}
+
+.black {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.blackInput {
+	width: 60px;
+	flex: 1 1 150px;
+}
+
+.maginl {
+	margin-left: 20px;
+}
+
+.plusB {
+	margin-left: 5px;
+}
+
+.Bunit {
+	font-size: 20px;
+	color: #141f57;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.footer {
+	height: 20px;
+	background: #ffffff;
+	padding: 5px;
+}
+
+.created {
+	display: flex;
+	justify-content: center;
+	color: #141f57;
+}
+
+@media (max-width: 500px) {
+	.plusB {
+		margin-left: 5px;
+	}
+	.minB {
+		margin-left: 5px;
+	}
+	.maginl {
+		margin-left: 5px;
+	}
+}
