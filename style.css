@@ -193,7 +193,7 @@ img {
 input {
 	border: var(--btn-color) solid 2px;
 	height: 42px;
-	width: 200px;
+	width: 30%;
 	font-size: 20px;
 	margin-top: 10px;
 	border-radius: 10px;
